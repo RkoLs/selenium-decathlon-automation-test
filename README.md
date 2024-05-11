@@ -1,30 +1,62 @@
-Teste de Automação Web com Java, JUnit 5 e Selenium - Jornada do Usuário
-Este projeto consiste em um conjunto de testes de automação desenvolvidos para garantir a jornada do usuário no site da Decathlon. Os testes foram criados utilizando Java 8, JUnit 5 e Selenium WebDriver, e têm como objetivo simular as ações que um usuário realizaria ao navegar pelo site, desde a pesquisa de produtos até a verificação do produto no carrinho de compras.
+# Automação Web com Java, JUnit e Selenium
 
-Objetivo
-O objetivo principal deste projeto é garantir a funcionalidade e a integridade da jornada do usuário no site da Decathlon. Os testes automatizados foram projetados para identificar eventuais falhas ou problemas durante o processo de compra, permitindo que sejam corrigidos antes que afetem a experiência do usuário final.
+Este projeto consiste em uma automação de teste de web desenvolvida em Java, utilizando JUnit como framework de teste e Selenium para interação com o navegador.
 
-Funcionalidades Testadas
-Os testes automatizados cobrem as seguintes funcionalidades:
+## Objetivo
 
-Pesquisa de Produtos: Verifica se o usuário pode pesquisar por produtos utilizando a barra de pesquisa do site.
-Seleção de Produto: Simula a seleção de um produto específico após a pesquisa.
-Escolha do Tamanho: Testa a capacidade do usuário de selecionar o tamanho desejado do produto.
-Adição ao Carrinho: Verifica se o usuário pode adicionar o produto selecionado ao carrinho de compras.
-Consulta de Frete: Testa a funcionalidade de informar o CEP para calcular o frete do produto.
-Verificação do Carrinho de Compras: Confirma se o produto adicionado está corretamente exibido no carrinho de compras.
-Estrutura do Projeto
-O projeto está estruturado da seguinte forma:
+O objetivo deste projeto é garantir a jornada do usuário ao testar a funcionalidade de busca de produtos, selecionar um produto, selecionar o tamanho do produto, adicionar ao carrinho, informar o CEP para consultar o frete e verificar o produto no carrinho de compras.
 
-DriverFactory: Classe responsável por inicializar e gerenciar a instância do WebDriver, utilizado para interagir com o navegador durante os testes de automação.
-Executa: Classe com métodos para iniciar e finalizar o teste, além de maximizar a janela do navegador e abrir a página inicial do site da Decathlon.
-Metodos: Classe contendo métodos para realizar as diferentes etapas da jornada do usuário, como clicar em botões, preencher campos de formulário e capturar textos.
-Teste: Classe de teste que utiliza os métodos da classe Metodos para executar os testes automatizados.
-Configuração e Execução
-Para configurar e executar o projeto, siga estes passos:
+Durante o processo de teste com o usuário deslogado, foi identificado um problema no site, onde, seguindo cada etapa do processo, o usuário precisa fazer três solicitações de clique para acessar o carrinho de compras. Isso se deve à comunicação entre o front-end e o back-end, prejudicando a experiência do usuário final. Para simular o comportamento do usuário, foram utilizados intervalos de espera (thread.sleep) entre as ações de clique.
 
-Clone o repositório em sua máquina local.
-Abra o projeto em sua IDE preferida.
-Certifique-se de ter o JDK 8 e o Maven instalados em seu sistema.
-Configure o WebDriver para o navegador Google Chrome.
-Execute a classe de teste Teste.java para iniciar os testes automatizados.
+## Ferramentas Utilizadas
+
+- Linguagem de Programação: Java 8
+- Framework de Teste: JUnit 5
+- Automação de Navegador: Selenium WebDriver
+- Gerenciador de Dependências: Maven
+
+## Estrutura do Projeto
+
+O projeto está dividido em várias classes e pacotes, cada um com uma função específica:
+
+- `DriverFactory`: Classe responsável por fornecer uma instância do WebDriver para os testes.
+- `Executa`: Classe contendo métodos para iniciar e finalizar o teste, utilizando o ChromeDriver como navegador.
+- `Metodos`: Classe contendo métodos para interagir com elementos da página, realizar ações como clicar, preencher campos, capturar texto e capturar screenshots.
+- `Teste`: Classe de teste contendo o método `comprarProduto()` que executa a jornada do usuário.
+
+## Instalação
+
+Antes de executar o teste automatizado, certifique-se de ter os seguintes pré-requisitos instalados:
+
+### Pré-requisitos
+
+- Java Development Kit (JDK) 8 ou superior
+- Apache Maven
+
+### Configurar as variáveis de ambiente
+
+Certifique-se de configurar corretamente as variáveis de ambiente para o JDK e o Maven no seu sistema.
+
+### Clonar o Repositório
+
+Clone o repositório para sua máquina local:
+
+```bash
+git clone https://github.com/RkoLs/selenium-decathlon-automation-test.git
+```
+
+### Navegar até o Diretório do Projeto
+
+Navegue até o diretório do projeto:
+
+```bash
+cd decathlon.automation
+```
+
+### Buildar o Projeto Localmente
+
+Antes de executar o teste automatizado, é necessário buildar o projeto localmente. Para isso, utilize o Maven:
+
+```bash
+mvn clean install
+```
