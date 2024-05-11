@@ -1,5 +1,3 @@
-# selenium-decathlon-automation-test
-
 Teste de Automação Web com Java, JUnit 5 e Selenium - Jornada do Usuário
 Este projeto consiste em um conjunto de testes de automação desenvolvidos para garantir a jornada do usuário no site da Decathlon. Os testes foram criados utilizando Java 8, JUnit 5 e Selenium WebDriver, e têm como objetivo simular as ações que um usuário realizaria ao navegar pelo site, desde a pesquisa de produtos até a verificação do produto no carrinho de compras.
 
