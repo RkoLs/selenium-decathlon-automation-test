@@ -60,3 +60,6 @@ Antes de executar o teste automatizado, é necessário buildar o projeto localme
 ```bash
 mvn clean install
 ```
+
+## Autor
+[Richard Leal Kovalski de Lima] - [[LinkedIn](https://www.linkedin.com/in/richardkovalski/)]
