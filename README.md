@@ -6,7 +6,8 @@ Este projeto consiste em uma automação de teste de web desenvolvida em Java, u
 
 O objetivo deste projeto é garantir a jornada do usuário ao testar a funcionalidade de busca de produtos, selecionar um produto, selecionar o tamanho do produto, adicionar ao carrinho, informar o CEP para consultar o frete e verificar o produto no carrinho de compras.
 
-Durante o processo de teste com o usuário deslogado, foi identificado um problema no site, onde, durante a última etapa do processo, o usuário precisa fazer três solicitações de clique para acessar o carrinho de compras. Isso se deve à comunicação entre o front-end e o back-end, prejudicando a experiência do usuário final. 
+Durante o processo de teste com o usuário deslogado, foi identificado um problema no site, onde, durante a última etapa do processo, o usuário precisa fazer três solicitações de clique para acessar o carrinho de compras.
+Isso se deve à comunicação entre o front-end e o back-end, prejudicando a experiência do usuário final. 
 
 ## Ferramentas Utilizadas
 
