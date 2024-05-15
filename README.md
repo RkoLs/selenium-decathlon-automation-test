@@ -37,9 +37,11 @@ Antes de executar o teste automatizado, certifique-se de ter os seguintes pré-r
 
 Certifique-se de configurar corretamente as variáveis de ambiente para o JDK e o Maven no seu sistema.
 
+Para executar o teste automatizado, siga as instruções abaixo:
+
 ### Clonar o Repositório
 
-Clone o repositório para sua máquina local:
+1. Clone o repositório para sua máquina local:
 
 ```bash
 git clone https://github.com/RkoLs/selenium-decathlon-automation-test.git
@@ -47,7 +49,7 @@ git clone https://github.com/RkoLs/selenium-decathlon-automation-test.git
 
 ### Navegar até o Diretório do Projeto
 
-Navegue até o diretório do projeto:
+2. Navegue até o diretório do projeto:
 
 ```bash
 cd decathlon.automation
@@ -55,10 +57,16 @@ cd decathlon.automation
 
 ### Buildar o Projeto Localmente
 
-Antes de executar o teste automatizado, é necessário buildar o projeto localmente. Para isso, utilize o Maven:
+3. Antes de executar o teste automatizado, é necessário buildar o projeto localmente. Para isso, utilize o Maven:
 
 ```bash
 mvn clean install
+```
+
+4. Após a build ser concluída com sucesso, você pode executar o teste:
+
+```bash
+mvn test
 ```
 
 ## Autor
