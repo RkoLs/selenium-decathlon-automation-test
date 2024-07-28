@@ -71,4 +71,9 @@ mvn test
 ```
 
 ## Autor
-Richard Leal Kovalski de Lima - [[LinkedIn](https://www.linkedin.com/in/richardkovalski/)]
+
+- **Richard Leal Kovalski de Lima** - Desenvolvedor do Site
+
+---
+
+_Powered by **_RkoLs_**_
